@@ -41,4 +41,4 @@ else:
 print("you scored " + str(gryffindor) + " gryffindor points.") 
 print("you scored " + str(ravenclaw) + " ravenclaw points.")
 print("you scored " + str(hufflepuff) + " hufflepuff points.")
-print("you scoreed " + str(slytherin) + " slytherin points.")
+print("you scored " + str(slytherin) + " slytherin points.")
