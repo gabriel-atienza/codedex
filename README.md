@@ -1,4 +1,4 @@
-A repository containing assignments and projects for the Logic Programming course (6LOGPROG).
+A repository containing activities from codedex platform.
 
 
 ## Contents
