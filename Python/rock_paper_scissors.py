@@ -10,6 +10,10 @@ computer = random.randint(1, 5)
 
 print("")
 
+while player < 1 or player > 5:
+    print("Invalid input. Please choose a number between 1 and 5.")
+    player = int(input("Pick a number:   "))
+
 if player == 1:
     print("You chose ✊")
 elif player == 2:
@@ -18,10 +22,9 @@ elif player == 3:
     print("You chose ✌️")
 elif player == 4:
     print("You chose 🦎")
-elif player == 5:
-    print("You chose 🖖")
 else:
-    print("Invalid input. Please choose a number between 1 and 5.")
+    print("You chose 🖖")
+
 
 if computer == 1:
     print("CPU chose ✊")
@@ -31,7 +34,7 @@ elif computer == 3:
     print("CPU chose ✌️")
 elif computer == 4:
     print("CPU chose 🦎")
-elif computer == 5:
+else:
     print("CPU chose 🖖")
 
 if player == 1: #player chose rock
@@ -78,7 +81,7 @@ elif player == 4:   #player chose lizard
         print("It's a tie!") #lizard vs lizard
     else: #CPU chose spock
         print("The player won!") #lizard poisons spock
-elif player == 5:   #player chose spock
+else:   #player chose spock
     if computer == 1: #CPU chose rock
         print("The player won!") #spock vaporizes rock
     elif computer == 2: #CPU chose paper
@@ -89,5 +92,3 @@ elif player == 5:   #player chose spock
         print("The CPU won!") #lizard poisons spock
     else: #CPU chose spock
         print("It's a tie!") #spock vs spock
-else:
-    print("Invalid input. Please choose a number between 1 and 5.")
