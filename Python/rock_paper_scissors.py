@@ -5,36 +5,37 @@ print("================================\nRock Paper Scissors Lizard Spock\n=====
 print("")
 print("1) ✊\n2) ✋\n3) ✌️\n4) 🦎\n5) 🖖")
 
-player = int(input("Pick a number:   "))
-computer = random.randint(1, 5)
+#variables
+player = int(input("Pick a number:   ")) #input from player
+computer = random.randint(1, 5) #random number from 1-5 for computer
 
 print("")
 
-while player < 1 or player > 5:
-    print("Invalid input. Please choose a number between 1 and 5.")
-    player = int(input("Pick a number:   "))
+while player < 1 or player > 5: #while loop to check if player input is valid
+    print("Invalid input. Please choose a number between 1 and 5.") #prints error message
+    player = int(input("Pick a number:   ")) #input from player
 
-if player == 1:
+if player == 1: #player chose rock
     print("You chose ✊")
-elif player == 2:
+elif player == 2: #player chose paper
     print("You chose ✋")
-elif player == 3:
+elif player == 3: #player chose scissors
     print("You chose ✌️")
-elif player == 4:
+elif player == 4: #player chose lizard
     print("You chose 🦎")
-else:
+else: #player chose spock
     print("You chose 🖖")
 
 
-if computer == 1:
+if computer == 1: #CPU chose rock
     print("CPU chose ✊")
-elif computer == 2:
+elif computer == 2: #CPU chose paper
     print("CPU chose ✋")
-elif computer == 3:
+elif computer == 3: #CPU chose scissors
     print("CPU chose ✌️")
-elif computer == 4:
+elif computer == 4: #CPU chose lizard
     print("CPU chose 🦎")
-else:
+else: #CPU chose spock
     print("CPU chose 🖖")
 
 if player == 1: #player chose rock
